@@ -1,0 +1,30 @@
+{
+    "name": "gunna-php/command-bus",
+    "description": "Middleware Command Bus",
+    "authors": [
+        {
+            "name": "Steven Miles",
+            "email": "steve@srmiles.com",
+            "homepage": "https://www.srmiles.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php":">=7.0.0",
+        "gunna-php/container":"^0.3.0",
+        "gunna-php/invoker":"^0.1.0"
+    },
+    "optional":{
+        "gunna-php/queue":"dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+             "GunnaPHP\\CommandBus\\":"./GunnaPHP/CommandBus"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "GunnaPHP\\CommandBus\\Test\\":"./GunnaPHP/CommandBus/test"
+        }
+    }
+}
