@@ -1,10 +1,10 @@
 <?php
-namespace GunnaPHP\CommandBus\Middleware;
+namespace KodCube\CommandBus\Middleware;
 
-use GunnaPHP\CommandBus\MiddlewareInterface;
-use GunnaPHP\CommandBus\CommandInterface;
-use GunnaPHP\CommandBus\MissingHandlerException;
-use GunnaPHP\Invoker\InvokerInterface;
+use KodCube\CommandBus\MiddlewareInterface;
+use KodCube\CommandBus\CommandInterface;
+use KodCube\CommandBus\MissingHandlerException;
+use KodCube\Invoker\InvokerInterface;
 
 class Handler implements MiddlewareInterface
 {

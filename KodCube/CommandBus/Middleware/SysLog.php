@@ -1,10 +1,10 @@
 <?php
-namespace GunnaPHP\CommandBus\Middleware;
+namespace KodCube\CommandBus\Middleware;
 
-use GunnaPHP\CommandBus\MiddlewareInterface;
-use GunnaPHP\CommandBus\CommandInterface;
-use GunnaPHP\CommandBus\CommandQueueInterface;
-use GunnaPHP\CommandBus\HandlerNotFoundException;
+use KodCube\CommandBus\MiddlewareInterface;
+use KodCube\CommandBus\CommandInterface;
+use KodCube\CommandBus\CommandQueueInterface;
+use KodCube\CommandBus\HandlerNotFoundException;
 
 class SysLog implements MiddlewareInterface
 {

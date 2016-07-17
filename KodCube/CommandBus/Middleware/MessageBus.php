@@ -1,12 +1,12 @@
 <?php
-namespace GunnaPHP\CommandBus\Middleware;
+namespace KodCube\CommandBus\Middleware;
 
-use GunnaPHP\CommandBus\MiddlewareInterface;
-use GunnaPHP\CommandBus\CommandInterface;
-use GunnaPHP\CommandBus\CommandQueueInterface;
-use GunnaPHP\CommandBus\HandlerNotFoundException;
+use KodCube\CommandBus\MiddlewareInterface;
+use KodCube\CommandBus\CommandInterface;
+use KodCube\CommandBus\CommandAsyncInterface;
+use KodCube\CommandBus\HandlerNotFoundException;
 
-class Queue implements MiddlewareInterface
+class MessageBus implements MiddlewareInterface
 {
     public function __construct( )
     {
@@ -22,8 +22,7 @@ class Queue implements MiddlewareInterface
     */
     public function __invoke(CommandInterface $command,Callable $next = null)
     {
-        if ( $command instanceOf CommandQueueInterface) {
-            echo 'Queue Command '.get_class($command).PHP_EOL;
+        if ( $command instanceOf CommandAsyncInterface) {
             return $command;
         }
         if (is_callable($next)) {

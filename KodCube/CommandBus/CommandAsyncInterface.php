@@ -2,6 +2,6 @@
 namespace KodCube\CommandBus;
 
 
-interface CommandQueueInterface
+interface CommandAsyncInterface
 {
 }
